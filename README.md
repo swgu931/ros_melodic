@@ -1,6 +1,6 @@
 # ros_melodic
 
-ROS melodic 설치 (Jetson 4.x)
+ROS melodic installation & build & test
 
 
 ## step 1
