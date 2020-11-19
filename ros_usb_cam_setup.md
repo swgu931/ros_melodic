@@ -1,4 +1,4 @@
-USB Camera setup
+# USB Camera setup
 
 ## step 1 : checking usb camera 
 
