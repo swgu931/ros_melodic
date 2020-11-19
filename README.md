@@ -56,7 +56,8 @@ catkin_create_pkg ros_topic_test std_msgs roscpp
 
 ## step 6: developing
 ```
-
+copy to ~/catkin_ws/src/ros_topic_test/src/ from this site /src/ros_pub_test.cpp, ros_sub_test.cpp
+copy to ~/catkin_ws/src/ros_topic_test/ from this site /src/CMakeLists.txt
 ```
 
 ## step 7 : compile & build
