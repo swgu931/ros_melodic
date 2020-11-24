@@ -2,6 +2,7 @@
 
 - ref : https://github.com/IntelRealSense/realsense-ros
 - ref: https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md
+- troubleshooting : the end of this page
 
 ## step 1 : Intel® RealSense™ SDK 2.0 (librealsense) installation for checking realsense d435 usb camera 
 
@@ -75,4 +76,13 @@ rosrun rqt_graph rqt_graph
 ```
 ```
 rviz
+```
+
+## Trobuleshooting
+
+- if your pc/robot could not find the camera interface, please refer to the following
+  ref: https://github.com/IntelRealSense/realsense-ros/issues/1408
+```
+cd /etc/udev/rules.d/ 
+sudo wget https://github.com/IntelRealSense/librealsense/blob/master/config/99-realsense-libusb.rules
 ```
