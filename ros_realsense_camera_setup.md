@@ -27,10 +27,14 @@ realsense-viewer
 modinfo uvcvideo | grep "version:"
 ```
 
-## step 3 : realsense ROS2 package install
+## step 3 : realsense ROS2 package source download
 ```
 cd ~/catkin_ws/src/
 git clone https://github.com/IntelRealSense/realsense-ros
+```
+
+## step 4 : build
+```
 cd ~/catkin_ws
 catkin_make
 source ~/catkin_ws/devel/setup.bash
@@ -40,13 +44,13 @@ export ROS_VER=melodic
 sudo apt-get install ros-$ROS_VER-realsense2-camera
 ```
 
-## step 4 : getting serial number from enumerate
+## step 5 : getting serial number from enumerate
 ```
 rs-enumerate-devices | grep Serial
 ```
 
 
-## step 5 : change the serial number in rs_camera.launch 
+## step 6 : change the serial number in rs_camera.launch 
 ```
 ~/catkin_ws/src/realsense-ros/realsense2_camera/launch$ vi rs_camera.launch
 ```
@@ -54,13 +58,6 @@ rs-enumerate-devices | grep Serial
  <arg name="serial_no"           default="935422070341"/>
 
 ```
-
-## step 6 : build
-```
-cd ~/catkin_ws
-catkin_make
-```
-
 
 ## step 7 : execution of realsense camera (D435)
 ```
