@@ -55,7 +55,14 @@ rs-enumerate-devices | grep Serial
 
 ```
 
-## step 6 : execution of realsense camera (d435)
+## step 6 : build
+```
+cd ~/catkin_ws
+catkin_make
+```
+
+
+## step 7 : execution of realsense camera (D435)
 ```
 roslaunch realsense2_camera rs_camera.launch camera:=cam_1 serial_no:=935422070341
 ```
@@ -64,7 +71,7 @@ or
 roslaunch realsense2_camera rs_camera.launch camera:=cam_1 
 ```
 
-## step 7 : check it is working fine
+## step 8 : check it is working fine
 
 ```
 rosrun rqt_graph rqt_graph
