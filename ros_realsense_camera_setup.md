@@ -90,3 +90,6 @@ sudo reboot
 or
 sudo udevadm control --reload-rules && udevadm trigger
 ```
+## Troubleshooting for TX2 Jetson board
+- https://github.com/IntelRealSense/librealsense/issues/3165
+  -> https://github.com/jetsonhacks/buildLibrealsense2TX
