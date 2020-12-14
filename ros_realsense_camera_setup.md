@@ -85,5 +85,8 @@ rviz
 ```
 cd /etc/udev/rules.d/ 
 sudo wget https://github.com/IntelRealSense/librealsense/blob/master/config/99-realsense-libusb.rules
-reboot
+
+sudo reboot
+or
+sudo udevadm control --reload-rules && udevadm trigger
 ```
